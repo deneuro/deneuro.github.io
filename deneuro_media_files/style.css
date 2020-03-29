@@ -5,7 +5,7 @@ body {
   --prim-color: rgb(0, 14, 118);
   background: #fff;
   color: #fff;
-  font-family: "Comfortaa", cursive;
+  font-family: "Times New Roman", Times, serif;
 }
 
 a {
@@ -24,7 +24,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Comfortaa", cursive;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
