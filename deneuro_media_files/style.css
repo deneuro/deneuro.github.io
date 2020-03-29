@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman", Times, serif; 
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started, #how .btn-get-started {
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman", Times, serif; 
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -349,7 +349,7 @@ h1, h2, h3, h4, h5, h6 {
   content: "\f107";
   position: absolute;
   right: 15px;
-  font-family: FontAwesome;
+  font-family: "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -376,7 +376,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   display: inline-block;
   color: #000e76;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman", Times, serif; 
   font-weight: 400;
   text-transform: uppercase;
   font-size: 13px;
@@ -681,7 +681,7 @@ section {
 .grey-full-width .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman", Times, serif; 
   font-size: 14px;
 }
 .grey-full-width .row.counters{
@@ -899,7 +899,7 @@ section {
 }
 
 #call-to-action .cta-btn {
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman", Times, serif; 
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
