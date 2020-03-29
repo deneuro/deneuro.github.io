@@ -1,1 +1,290 @@
-hello world
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <link rel="shortcut icon" type="images/x-icon" href="images/deneuro.ico" /> 
+  <title>Deneuro Media</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Fast news reporting app" name="keywords">
+  <meta content="Creating news article from videos via parsing web information using natural language processing. " name="description">
+  <meta property="og:image" content="images/deneuro_padded.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Creating news article from videos via parsing web information using natural language processing.">
+  <meta property="og:title" content="Deneuro Media">
+
+  <!-- Google Fonts -->
+  <link href="./deneuro_media_files/css" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="./deneuro_media_files/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="./deneuro_media_files/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./deneuro_media_files/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link href="./deneuro_media_files/font-awesome.min.css" rel="stylesheet">
+  <!-- Main Stylesheet File -->
+  <link href="./deneuro_media_files/style.css" rel="stylesheet">
+  
+  <link href="./deneuro_media_files/css(1)" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TDD016XN3T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TDD016XN3T');
+    </script>
+   <!-- Hotjar Tracking Code for www.deneuromedia.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1747069,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- need to pick which is better mixpanel or hotjar? just try both -->
+<!-- start Mixpanel --><script type="text/javascript">(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+mixpanel.init("YOUR TOKEN");</script><!-- end Mixpanel -->
+</head>
+
+<body class="vsc-initialized"><button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
+
+  <!--==========================
+  Header
+  ============================-->
+  <a name="top"></a>
+  <header id="header" class="">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="./images/deneuro_padded.svg" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#how">How</a></li>
+          <!-- <li><a href="#about">About Us</a></li> -->
+          <!-- <li><a href="#facts">Facts</a></li> -->
+          <!-- <li><a href="#team">Team</a></li> -->
+          <li><a href="#contact">Contact</a></li>          
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container one">
+      <h1 id="title">Deneuro Media</h1>
+      <h1 id="title"><img src="./images/computer_with_newspapers.jpg"></h1>
+      <h1>Real Time Descriptive News Articles </h1>
+      <!-- <div id="typewriter">
+        <h2 id="typewriter_text"></h2>
+        <div style="border-left: 1px solid white; height: 24px"></div>
+       
+      </div> -->
+      <a href="#how" class="btn-get-started">How?</a>
+    </div>
+  </section><!-- #hero -->
+
+    
+  <main id="main">
+    
+    <!--==========================
+      How
+    ============================-->
+    <section id="how"> 
+        <div class="container wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+          <div class="section-header">
+            <h3 class="section-title">Mobile News Article Creation from Video</h3>
+          </div>
+          <div class="section-details">
+            <div class="hero-container two">
+              <img src="./images/news_generation.png" width="100%">
+            </div>
+            <!-- <div class="text"> -->
+            <!--   <p class="section&#45;description"> -->
+            <!--     Create news articles from live video streams.  -->
+            <!--   </p>   -->
+            <!-- </div> -->
+          </div>
+            
+            <!-- <a class="btn&#45;get&#45;started">Interested?</a> -->
+            <form id="sign-me-up-input" onsubmit="event.preventDefault();" class="height0 next">
+              <input type="email" placeholder="email" required="">
+              <button>Submit</button>
+            </form>
+            <p class="comment height0">We'll be in touch soon!</p>
+        </div>
+    </section> <!-- #how -->
+    
+    <!--==========================
+      How2
+    ============================-->
+    <section id="how"> 
+        <div class="container wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+          <div class="section-header">
+            <!-- <h3 class="section&#45;title">Combining Current Events with context from the web</h3> -->
+            <h3 class="section-title">Understand Current Events with Relevant Facts </h3>
+          </div>
+          <div class="section-details">
+            <div class="hero-container two">
+              <img src="./images/amy_interview_and_documents.png" width="100%">
+            </div>
+
+            <!-- <div class="text"> -->
+            <!--   <p class="section&#45;description"> -->
+            <!--     Create news articles from live video streams.  -->
+            <!--   </p>   -->
+            <!-- </div> -->
+          </div>
+            
+            <!-- <a class="btn&#45;get&#45;started">Interested?</a> -->
+            <form id="sign-me-up-input" onsubmit="event.preventDefault();" class="height0 next">
+              <input type="email" placeholder="email" required="">
+              <button>Submit</button>
+            </form>
+            <p class="comment height0">We'll be in touch soon!</p>
+        </div>
+    </section> <!-- #how -->
+    <!--==========================
+      Side by side Section
+    ============================-->
+    <section id="team">
+      <div class="container wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <div class="section-header">
+          <h3 class="section-title">Interface</h3>
+          <!-- <p class="section&#45;description">Article Layout</p> -->
+        </div>
+        <div class="row center-content">
+          <div class="col">
+            <div class="member">
+              <div class="pic"><img src="./images/klob_closed_cropped.png" alt=""></div>
+              <h4>Contextual information embedded</h4>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="member">
+              <div class="pic"><img src="./images/klob_open_cropped.png" alt=""></div>
+              <h4>Relevant sentences extracted from sources</h4>
+            </div>
+          </div>
+      </div>
+    </div></section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container wow fadeInUp" style="visibility: hidden; animation-name: none;">
+        <div class="section-header">
+          <h3 class="section-title">Contact</h3>
+          <!-- <p class="section&#45;description">Please drop us a line!</p> -->
+        </div>
+      </div>
+
+      <!-- Uncomment below if you wan to use dynamic maps -->
+      
+      <div class="container wow fadeInUp mt-5" style="visibility: hidden; animation-name: none;">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-5 col-md-7">
+                <h3 class="section-description">raymond.y.xu@gmail.com</h3>
+            <div class="form">
+                <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
+              <!-- <div id="errormessage"></div> -->
+              <!-- <form action="email" method="post" role="form" class="contactForm"> -->
+              <!--   <div class="form&#45;group"> -->
+              <!--     <input type="text" name="name" class="form&#45;control" id="name" placeholder="Your Name" data&#45;rule="minlen:4" data&#45;msg="Please enter at least 4 chars"> -->
+              <!--     <div class="validation"></div> -->
+              <!--   </div> -->
+              <!--   <div class="form&#45;group"> -->
+              <!--     <input type="email" class="form&#45;control" name="email" id="email" placeholder="Your Email" data&#45;rule="email" data&#45;msg="Please enter a valid email"> -->
+              <!--     <div class="validation"></div> -->
+              <!--   </div> -->
+              <!--   <div class="form&#45;group"> -->
+              <!--     <input type="text" class="form&#45;control" name="subject" id="subject" placeholder="Subject" data&#45;rule="minlen:4" data&#45;msg="Please enter at least 8 chars of subject"> -->
+              <!--     <div class="validation"></div> -->
+              <!--   </div> -->
+              <!--   <div class="form&#45;group"> -->
+              <!--     <textarea class="form&#45;control" name="message" rows="5" data&#45;rule="required" data&#45;msg="Please write something for us" placeholder="Message"></textarea> -->
+              <!--     <div class="validation"></div> -->
+              <!--   </div> -->
+              <!--   <div class="text&#45;center"><button type="submit">Send Message</button></div> -->
+              <!-- </form> -->
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <!-- <iframe src="./deneuro_media_files/embed.html" width="100%" height="250" frameborder="0" style="border:0; margin&#45;top:16px; " allowfullscreen=""></iframe>    -->
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        <!-- © Copyright <strong>Cloud Cycle Ltd </strong> All Rights Reserved -->
+         <a href="#top"><img src="./images/deneuro_padded.svg" alt="" style="height:100px" title=""></a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top" style="display: none;"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="./deneuro_media_files/jquery.min.js"></script>
+  <script src="./deneuro_media_files/jquery-migrate.min.js"></script>
+  <script src="./deneuro_media_files/bootstrap.bundle.min.js"></script>
+  <script src="./deneuro_media_files/easing.min.js"></script>
+  <script src="./deneuro_media_files/wow.min.js"></script>
+  <script src="./deneuro_media_files/waypoints.min.js"></script>
+  <script src="./deneuro_media_files/counterup.min.js"></script>
+  <script src="./deneuro_media_files/hoverIntent.js"></script>
+  <script src="./deneuro_media_files/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="./deneuro_media_files/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="./deneuro_media_files/main.js"></script>
+
+
+
+<nav id="mobile-nav">
+        <ul class="" style="touch-action: pan-y;" id="">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#how">How</a></li>
+          <!-- <li><a href="#about">About Us</a></li> -->
+          <!-- <li><a href="#facts">Facts</a></li> -->
+          <!-- <li><a href="#services">Services</a></li> -->
+          <!-- <li><a href="#sdgs">SDGs</a></li> -->
+          <!-- <li><a href="#portfolio">Traction</a></li> -->
+          <!-- <li><a href="#team">Team</a></li> -->
+          <li><a href="#contact">Contact Us</a></li>          
+        </ul>
+      </nav><div id="mobile-body-overly"></div></body></html>
