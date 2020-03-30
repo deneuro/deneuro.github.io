@@ -247,6 +247,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #how .section-description {
     color: #000;
+  padding: 30px;
+  font-size: 1.2rem; 
 }
 
 #how #sign-me-up-input button{
@@ -575,6 +577,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   /* padding-bottom: 40px; */
   color: #000;
+  padding: 30px;
+  font-size: 1.2rem; 
 }
 
 
@@ -1034,7 +1038,7 @@ section {
 --------------------------------*/
 #team {
   background: #fff;
-  padding: 80px 0 60px 0;
+  padding: 20px 0 20px 0;
 }
 
 #team .member {
@@ -1086,7 +1090,7 @@ section {
 --------------------------------*/
 #contact {
   background: #fff;
-  padding: 80px 0 40px 0;
+  padding: 20px 0 20px 0;
 }
 
 #contact h3 {
