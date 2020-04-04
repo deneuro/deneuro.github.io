@@ -249,6 +249,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
   padding: 30px;
   font-size: 2rem; 
+  font-size: 3vw; 
 }
 
 #how #sign-me-up-input button{
@@ -566,6 +567,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 } */
 .section-header .section-title {
   font-size: 45px;
+  font-size: 4vw;
   color: #111;
   /* text-transform: uppercase; */
   text-align: center;
@@ -578,7 +580,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* padding-bottom: 40px; */
   color: #000;
   padding: 30px;
-  font-size: 2rem; 
+  font-size: 2vw; 
 }
 
 
@@ -1060,6 +1062,7 @@ section {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 30px;
+  font-size: 3vw;
   color: #000;
 }
 
@@ -1095,6 +1098,8 @@ section {
 
 #contact h3 {
     color: #000;
+    /* font-size: 30px; */
+    /* font-size: 3vw; */
 }
 
 #contact #google-map {
