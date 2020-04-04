@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .hero-container.one p{
   color: #fff;
-  font-size: 1.2em;
+  font-size: 2em;
 }
 #hero img .one{
   
@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 30px 0 10px 0;
-  font-size: 48px;
+  font-size: 55px;
   font-weight: 700;
   line-height: 56px;
   color: #000;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 #how .section-description {
     color: #000;
   padding: 30px;
-  font-size: 1.2rem; 
+  font-size: 2rem; 
 }
 
 #how #sign-me-up-input button{
@@ -565,7 +565,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: left;
 } */
 .section-header .section-title {
-  font-size: 32px;
+  font-size: 45px;
   color: #111;
   /* text-transform: uppercase; */
   text-align: center;
@@ -578,7 +578,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* padding-bottom: 40px; */
   color: #000;
   padding: 30px;
-  font-size: 1.2rem; 
+  font-size: 2rem; 
 }
 
 
@@ -1059,7 +1059,7 @@ section {
 #team .member h4 {
   font-weight: 700;
   margin-bottom: 2px;
-  font-size: 18px;
+  font-size: 30px;
   color: #000;
 }
 
