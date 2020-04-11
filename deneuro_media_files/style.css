@@ -8,6 +8,47 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-style: italic;
+  width: 80%;
+  margin: 0.25em 20px;
+  padding: 0.55em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #141414;
+  background-color: antiquewhite;
+}
+
+@media (max-width: 768px){
+  blockquote {
+    font-size: 3vw;
+}
+}
+
+blockquote:before {
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #5c5c5c;
+}
+
+blockquote cite {
+  color: #5c5c5c;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
 a {
   color: var(--prim-color, #2dc997);
 }
@@ -599,7 +640,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 30px;
   font-size: 2vw; 
 }
-
 
 /* Section 
 ---------------------------------*/
