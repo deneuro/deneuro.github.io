@@ -240,7 +240,7 @@ jQuery(document).ready(function ($) {
       aboutUs.solutions[key].map(createSolution).forEach(s=>about.appendChild(s));
     });
   }
-  createAboutUs(aboutUs);
+  // createAboutUs(aboutUs);
   
 
   // Porfolio filter
