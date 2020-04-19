@@ -94,7 +94,7 @@ function jqueryAPI(){
         "summary": "", "authors":"", "date":"","pdf_url":"", "title":""
     };
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://35.202.140.218:80/snippets/");
+    xhr.open("POST", "https://deneuromedia.com/snippets/");
     xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 
     // send the collected data as JSON
