@@ -1,0 +1,73 @@
+.outer {
+    padding: 0px 25px;
+}
+
+.post-full-content {
+    font-family: "Elena Basic", "Times New Roman", "Times", serif;
+    font-size:19px;
+    font-weight:400;
+    padding-bottom:30px;
+}
+
+.post-full-content a {
+    color:#007bff;
+    text-decoration:none;
+    box-shadow:none;
+}
+
+.post-full-header {
+    padding-top:30px;
+    padding-bottom:20px;
+}
+
+.post-full-meta {
+	padding-bottom: 60px;
+}
+
+.navbar {
+    padding: 8px 16px;
+    line-height: 24px;
+}
+
+.navbar-toggler {
+    font-size:26px;
+}
+
+a.nav-link {
+    font-size: 17px;
+}
+
+h1 {
+    font-size: 47px;
+}
+
+h1 a {
+    color: inherit;
+}
+
+h1 a:hover {
+    color: #444;
+}
+
+span.text-highlight, b.i, strong em {
+    background-color:#FFE44B;
+    box-shadow: 0 0 0 2px #FFE44B;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.floating-header-share {
+  padding: 0px;
+  padding-bottom: 20px;
+}
+
+div.floating-header-share-inner {
+  display:flex;
+  margin:auto;
+}
+
+.layouts-footer {
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:15px;
+}
