@@ -1,0 +1,13 @@
+commentID,Website,commenter,parentCommentID,Comment Level,Comment Text,Time of Post,Upvotes
+1,antler.co,David L,1,0,What do you think the best Antler startup is? @MaxM @RayX,12:05,22
+2,antler.co,Max M,1,1,I think WithinHealth is pretty great,12:25,14
+3,antler.co,Ray X,1,1,"Sit tight, I'm building something that's going blow the rest of the startups away.",12:45,49
+4,antler.co,Tyler N,4,0,I love all of my startups equally.,14:33,4
+5,antler.co,Ryan S,5,0,"Yeah, everything we do is great.",14:50,9
+6,antler.co,Jack K,6,0,The best is yet to come!,15:03,24
+7,pioneer,John S,7,0,Zendesk sucks. Can't wait for this space to be disrupted.,15:31,110
+8,pioneer,Sally M,7,1,I'm building a new Zendesk - DM me to find out more.,15:55,20
+9,pioneer,Jane D,9,0,Where can you get org chart data from?,16:01,31
+10,pioneer,Daniel G,9,1,See Zoominfo/DiscoverOrg. They're pretty expensive but both are okay.,16:22,35
+11,pioneer,Sam A,11,0,We would love to see more of these startups apply to YC!,17:00,240
+12,pioneer,Ryan S,12,0,Does anyone want to make a new American idol?,18:01,-400
