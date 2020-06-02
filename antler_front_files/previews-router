@@ -1,0 +1,32 @@
+var Router = {}; (function(_root){
+var _nS = function(c,f,b){var e=c.split(f||"."),g=b||_root,d,a;for(d=0,a=e.length;d<a;d++){g=g[e[d]]=g[e[d]]||{}}return g}
+var _qS = function(items){var qs = ''; for(var i=0;i<items.length;i++) {if(items[i]) qs += (qs ? '&' : '') + items[i]}; return qs ? ('?' + qs) : ''}
+var _s = function(p,s){return p+((s===true||(s&&s.secure))?'s':'')+'://'}
+var _wA = function(r){return {ajax:function(c){c=c||{};c.url=r.url;c.type=r.method;return jQuery.ajax(c)}, method:r.method,type:r.method,url:r.url,absoluteURL: function(s){return _s('http',s)+'antlerco.prismic.io'+r.url},webSocketURL: function(s){return _s('ws',s)+'antlerco.prismic.io'+r.url}}}
+_nS('controllers.Previews'); _root.controllers.Previews.ping = 
+      function(sessionId,ref) {
+      return _wA({method:"GET", url:"/" + "previews/" + (function(k,v) {return v})("sessionId", encodeURIComponent(sessionId)) + "/ping" + _qS([(function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("ref", ref)])})
+      }
+   
+_nS('controllers.Previews'); _root.controllers.Previews.acl = 
+      function(sessionId) {
+      return _wA({method:"GET", url:"/" + "previews/" + (function(k,v) {return v})("sessionId", encodeURIComponent(sessionId)) + "/acl"})
+      }
+   
+_nS('controllers.Previews'); _root.controllers.Previews.share = 
+      function(sessionId,pageURL,title,imageName) {
+      return _wA({method:"POST", url:"/" + "previews/s" + _qS([(function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("sessionId", sessionId), (function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("pageURL", pageURL), (function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("title", title), (function(k,v) {return encodeURIComponent(k)+'='+encodeURIComponent(v)})("imageName", imageName)])})
+      }
+   
+_nS('controllers.Previews'); _root.controllers.Previews.shared = 
+      function(shareableSessionId) {
+      return _wA({method:"GET", url:"/" + "previews/s/" + (function(k,v) {return v})("shareableSessionId", encodeURIComponent(shareableSessionId))})
+      }
+   
+_nS('controllers.Previews'); _root.controllers.Previews.ref = 
+      function(sessionId) {
+      return _wA({method:"GET", url:"/" + "previews/token/" + (function(k,v) {return v})("sessionId", encodeURIComponent(sessionId))})
+      }
+   
+})(Router)
+          
