@@ -8,11 +8,14 @@
 
   <body>
     <div id="logo-button"; style="display: block"; onclick="toggle_id('logo-button'); toggle_id('comments');"><img src="logo_pink.jpg"></img></div>
-    <div id="comments"; style="display: none";>Sample comment. 
-      <img class="x"; onclick="toggle_id('logo-button'); toggle_id('comments');"; src=close_x.svg></img>
+    <div id="comments"; class="bordered" style="display: none";>
+      <div class="bordered chat-navbar">
+        <img class="x"; onclick="toggle_id('logo-button'); toggle_id('comments');"; src=close_x.svg></img>
+        <div id="chat-container"></div>
+      </div>
     </div>
-    <div id="iframe-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: white;">
-      <iframe id="IFRAME" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.spamfighter.app/"></iframe>
+    <div id="iframe-container" class="fullscreen">
+      <iframe id="iframe-window" class="fullscreen" src="https://www.spamfighter.app/"></iframe>
     </div>
   </body>
 </html>
