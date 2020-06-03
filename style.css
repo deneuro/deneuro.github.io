@@ -1,28 +1,66 @@
+.bordered {
+  border: solid;
+  border-width: 1px;
+  border-color: #555;
+}
+
+.chat-navbar {
+  position: relative;
+  display: block;
+  top: 0;
+  height: 2em;
+  width: 100%;
+  padding: 0.5em;
+  background-color: #f66;
+  border-left: none;
+}
+
+.padded-comment {
+  padding-left: 0.5em;
+}
+
+.fullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#chat-container {
+  display: block;
+  position: relative;
+  top: 2em;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #iframe-container {
     z-index: -1;
 }
 
 #logo-button {
     z-index: 0;
-    position: fixed; 
-    bottom: 0; 
+    position: fixed;
+    bottom: 0;
     right: 0;
     cursor: pointer;
 }
 
 #comments {
     position: fixed;
-    right: 0; 
-    bottom: 0; 
+    right: 0;
+    bottom: 0;
     background-color: white;
-    width: 20%; 
+    width: 20%;
     max-width: 400px;
-    height: 100%; 
+    height: 100%;
 }
 
 .x {
     cursor: pointer;
     position: fixed;
-    top: 0; 
+    top: 0;
     right: 0;
 }
