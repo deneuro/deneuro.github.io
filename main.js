@@ -51,6 +51,7 @@ function addCommentToThread(comment, threadId) {
   downArrow.src = "chevron-down.svg";
   downArrow.classList.add('downArrow');
   let upvotesD = document.createElement('div');
+  upvotesD.classList.add('upDiv');
   upvotesD.innerHTML = comment['Upvotes\r'];
 
   upvoteContainer.appendChild(upArrow);
