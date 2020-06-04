@@ -86,8 +86,11 @@ function switchSite() {
   let iframe = document.getElementById('iframe-window');
   iframe.src = window.trufURL;
 
+  let feed = document.getElementById('truf-feed') || {};
+  feed.text = (window.trufURL === SITE_1)
+    ? "See what Jack K just posted to era.com"
+    : "See what Ryan S just posted to pioneer.app";
 }
-
 
 function parseComments(text) {
   const [columnLine, ...commentRows] = text.split('\n');
