@@ -103,3 +103,19 @@
     top: 0;
     right: 0;
 }
+
+.upContainer {
+    display: inline-block;
+    float: left; 
+    position: relative;
+}
+
+.upArrow {
+    display: block;
+    cursor: pointer;
+}
+
+.downArrow {
+    display: block;
+    cursor: pointer;
+}
