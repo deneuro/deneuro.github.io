@@ -35,11 +35,24 @@ function postComment() {
   return false;
 }
 
-function addCommentToThread(comment, threadId) {
+function addCommentToThread(comment, threadId, upvotes) {
   const thread = document.getElementById(threadId) || document.getElementById("chat-container");
 
   let commentElementContainer = document.createElement("div");
   commentElementContainer.id = `comment-${comment["commentID"]}`;
+
+  // add upvotes
+  let upvoteContainer = document.createElement('div');
+  upvoteContainer.classList.add('upContainer');
+  let upArrow = document.createElement('img'); 
+  upArrow.src = "chevron-up.svg";
+  upArrow.classList.add('upArrow');
+  let downArrow = document.createElement('img'); 
+  downArrow.src = "chevron-down.svg";
+  downArrow.classList.add('downArrow');
+
+  upvoteContainer.appendChild(upArrow);
+  upvoteContainer.appendChild(downArrow);
 
   let commentAuthorText = document.createElement("p");
   commentAuthorText.innerHTML = comment["commenter"];
@@ -52,6 +65,7 @@ function addCommentToThread(comment, threadId) {
   repliesElement.id = `comment-${comment["commentID"]}-replies`;
   repliesElement.classList.add("child-thread");
 
+  commentElementContainer.appendChild(upvoteContainer);
   commentElementContainer.appendChild(commentAuthorText)
   commentElementContainer.appendChild(commentElement)
   commentElementContainer.appendChild(repliesElement)
