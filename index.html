@@ -7,12 +7,18 @@
   </head>
 
   <body>
-    <div id="logo-button"; style="display: block"; onclick="toggle_id('logo-button'); toggle_id('comments');"><img src="logo_pink.jpg"></img></div>
+    <div id="logo-button"; style="display: block"; onclick="toggle_id('logo-button'); toggle_id('comments', 'flex');"><img src="logo_pink.jpg"></img></div>
     <div id="comments"; class="bordered" style="display: none";>
       <div class="bordered chat-navbar">
         <img class="x"; onclick="toggle_id('logo-button'); toggle_id('comments');"; src=close_x.svg></img>
       </div>
       <div id="chat-container"></div>
+      <div id="post-container">
+        <form id="post-from" onsubmit="return postComment()">
+          <input type="text" id="post-input"></input>
+          <input type="submit" value="Post">
+        </form>
+      </div>
     </div>
     <div id="iframe-container" class="fullscreen">
       <iframe id="iframe-window" class="fullscreen" src="https://www.era.com/"></iframe>

@@ -8,14 +8,30 @@ document.addEventListener('DOMContentLoaded', () => window.trufURL = SITE_1);
 /**
  * UX
  */
-function toggle_id(id){
+function toggle_id(id, display){
     const elems = document.getElementById(id);
 
     if (elems.style.display === "none") {
-        elems.style.display = "block";
+        elems.style.display = display || "block";
     } else {
         elems.style.display = "none";
     }
+}
+
+function postComment() {
+  let postInput = document.getElementById("post-input");
+  const comment = postInput.value;
+  postInput.value = "";
+
+  if (comment) {
+    addCommentToThread({
+      "commenter": "anter_user_2020",
+      "commentID": Date.now(),
+      "Comment Text": comment,
+    });
+  }
+
+  return false;
 }
 
 function addCommentToThread(comment, threadId) {
