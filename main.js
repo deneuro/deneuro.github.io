@@ -29,6 +29,7 @@ function postComment() {
       "commenter": "anter_user_2020",
       "commentID": Date.now(),
       "Comment Text": comment,
+      "Upvotes\r": 0,
     });
   }
 
