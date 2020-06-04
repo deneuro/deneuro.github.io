@@ -35,7 +35,7 @@ function postComment() {
   return false;
 }
 
-function addCommentToThread(comment, threadId, upvotes) {
+function addCommentToThread(comment, threadId, upvotes = 0) {
   const thread = document.getElementById(threadId) || document.getElementById("chat-container");
 
   let commentElementContainer = document.createElement("div");
@@ -50,8 +50,11 @@ function addCommentToThread(comment, threadId, upvotes) {
   let downArrow = document.createElement('img'); 
   downArrow.src = "chevron-down.svg";
   downArrow.classList.add('downArrow');
+  let upvotesD = document.createElement('div');
+  upvotesD.innerHTML = upvotes;
 
   upvoteContainer.appendChild(upArrow);
+  upvoteContainer.appendChild(upvotesD);
   upvoteContainer.appendChild(downArrow);
 
   let commentAuthorText = document.createElement("p");
