@@ -2,6 +2,7 @@
 
 const SITE_1 = "https://pioneer.app/blog/";
 const SITE_2 = "https://www.era.com/";
+
 document.addEventListener('DOMContentLoaded', () => window.trufURL = SITE_1);
 
 
@@ -64,6 +65,7 @@ function addCommentToThread(comment, threadId) {
  * loading and parsing comments
  */
 function repopulateComments(url) {
+  console.log("REPOPULATION COMMENCING")
   document.getElementById("chat-container").innerHTML = "";
 
   const comments = window.COMMENTS[url] || window.COMMENTS.default;
@@ -74,6 +76,16 @@ function repopulateComments(url) {
 
     addCommentToThread(comment, thread);
   }
+}
+
+
+function switchSite() {
+  window.trufURL = window.trufURL === SITE_1 ? SITE_2 : SITE_1;
+  repopulateComments(window.trufURL);
+
+  let iframe = document.getElementById('iframe-window');
+  iframe.src = window.trufURL;
+
 }
 
 
@@ -90,8 +102,8 @@ function parseComments(text) {
 
   window.COMMENTS = {
     [SITE_1]: comments.filter(c => c.Website === "pioneer"),
-    [SITE_2]: comments.filter(c => c.Website === "antler.co"),
-    default: comments.filter(c => !(c.Website === "antler.co" || c.Website === "antler.co")),
+    [SITE_2]: comments.filter(c => c.Website === "realestate"),
+    default: comments.filter(c => !(c.Website === "realestate" || c.Website === "pioneer")),
   };
 }
 
