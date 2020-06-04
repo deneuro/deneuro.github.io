@@ -119,3 +119,7 @@
     display: block;
     cursor: pointer;
 }
+
+.upDiv {
+    text-align: center;
+}
