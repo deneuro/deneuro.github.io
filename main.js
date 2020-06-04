@@ -1,7 +1,7 @@
 /* globals window.COMMENTS */
 
-const SITE_1 = "https://www.era.com/";
-const SITE_2 = "https://pioneer.app/blog/";
+const SITE_1 = "https://pioneer.app/blog/";
+const SITE_2 = "https://www.era.com/";
 document.addEventListener('DOMContentLoaded', () => window.trufURL = SITE_1);
 
 
@@ -89,8 +89,8 @@ function parseComments(text) {
     ));
 
   window.COMMENTS = {
-    [SITE_1]: comments.filter(c => c.Website === "antler.co"),
-    [SITE_2]: comments.filter(c => c.Website === "pioneer"),
+    [SITE_1]: comments.filter(c => c.Website === "pioneer"),
+    [SITE_2]: comments.filter(c => c.Website === "antler.co"),
     default: comments.filter(c => !(c.Website === "antler.co" || c.Website === "antler.co")),
   };
 }
